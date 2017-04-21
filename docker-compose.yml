@@ -1,0 +1,20 @@
+version: '2'
+services:
+  prometheus:
+    tty: true
+    stdin_open: true
+    labels:
+      io.rancher.container.create_agent: true
+      io.rancher.container.agent.role: environment
+    ports:
+      - 9090:9090
+    image: ecliptik/prometheus
+  prometheus-rancher-exporter:
+    tty: true
+    stdin_open: true
+    labels:
+      io.rancher.container.create_agent: true
+      io.rancher.container.agent.role: environment
+    ports:
+      - 9173:9173
+    image: ecliptik/prometheus-rancher-exporter
