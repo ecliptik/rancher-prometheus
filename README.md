@@ -1,5 +1,5 @@
 # rancher-prometheus
-Simple Prometheus Stack Config for exposing [https://www.rancher.com](Rancher) API via [https://prometheus.io](Prometheus).
+Simple Prometheus Stack Config for exposing [Rancher](https://www.rancher.com) API via [Prometheus](https://prometheus.io).
 
 ## Build Locally
 ```
